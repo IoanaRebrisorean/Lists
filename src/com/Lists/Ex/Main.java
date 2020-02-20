@@ -26,7 +26,7 @@ public class Main {
 //        function3(1,list1);
 
         //4.
-        function4(list1);
+//        function4(list1);
 
 
 
