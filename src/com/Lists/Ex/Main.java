@@ -13,8 +13,14 @@ public class Main {
         List<Integer> list1 = new ArrayList<Integer>();
         list1.add(0,9);
         list1.add(1,10);
-        list1.add(2,19);
+        list1.add(2,11);
 //        System.out.println(list1);
+
+        List<String> list2 = new ArrayList<String>();
+        list2.add(0, "Luni");
+        list2.add(1, "Marti");
+        list2.add(2,"Miercuri");
+//        System.out.println(list2);
 
         //1.
 //        function(4, list1);
@@ -28,6 +34,17 @@ public class Main {
         //4.
 //        function4(list1);
 
+        //5.
+//        function5(list2,0,"Ioana");
+
+        //6.
+//        function6(list1,79);
+
+        //7.
+//        function7(list1);
+
+        //8.
+        function8(list1);
 
 
 
@@ -80,9 +97,46 @@ public class Main {
         }
     }
 
+    //5. Creati o metoda java care sa primeasca 3 parametrii, o lista de Stringuri, un int si un String. Metoda sa puna parametrul de tip String in lista pe pozitia int.
+    public static void function5(List lista, int number, String string){
+            lista.add(number, string);
+            System.out.println(lista);
+    }
 
+    //6. Creati o metoda Java, care sa primeasca doi parametrii. Primul va fi o lista, iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista.
+    public static void function6(List newList, int number){
+        newList.add(0, number);
+        System.out.println(newList);
+    }
 
+    //7. Scrieti o metoda Java care sa primeasca ca parametru o lista, si sa afiseze ce valori are lista si pe ce pozitie.
+    public static void function7(List anotherList){
+        for ( int i = 0; i <= anotherList.size(); i++){
+            System.out.println("Pe pozitia: " + i + " este valoarea: " + anotherList.get(i));
+        }
+    }
 
+    //8. Scrieti o metoda Java care sa primeasca ca parametru o lista si sa returneze cel mai mare numar din ea.
+    public static void function8(List myList) {
+        int max = (int) myList.get(0);
+        for (int i = 1; i <= myList.size(); i++) {
+            int j = (int) myList.get(i);
+            if (j > max) {
+                max = j;
+            }
+            else {
+                max = max;
+            }
+            System.out.println(max);
+        }
+    }
 
 
 }
+
+
+
+
+
+
+
