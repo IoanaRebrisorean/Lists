@@ -44,7 +44,7 @@ public class Main {
 //        function7(list1);
 
         //8.
-        function8(list1);
+        System.out.println(function8(list1));
 
 
 
@@ -117,18 +117,16 @@ public class Main {
     }
 
     //8. Scrieti o metoda Java care sa primeasca ca parametru o lista si sa returneze cel mai mare numar din ea.
-    public static void function8(List myList) {
-        int max = (int) myList.get(0);
-        for (int i = 1; i <= myList.size(); i++) {
-            int j = (int) myList.get(i);
+    public static int function8(List<Integer> myList) {
+        int max = myList.get(0);
+        for (int i = 1; i < myList.size(); i++) {
+            int j = myList.get(i);
             if (j > max) {
                 max = j;
             }
-            else {
-                max = max;
-            }
-            System.out.println(max);
         }
+
+        return max;
     }
 
 
